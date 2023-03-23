@@ -1,35 +1,36 @@
 import Link from "next/link";
 import Tab from "./Tab";
-import { NavigationTabContainer, Tabs } from "./styles";
+import { NavigationTabContainer, Tabs, TabTitle } from "./styles";
+import { BiCalculator, BiCalendar, BiCog, BiGridAlt, BiListUl, BiLocationPlus, BiMapAlt } from "react-icons/bi";
 
 function Navigation() {
   return (
     <NavigationTabContainer>
-      <h2>
+      <TabTitle>
         <Link href="/">Home</Link>
-      </h2>
+      </TabTitle>
 
       <Tabs>
-        <h2>
+        <TabTitle>
           <Link href="/workout/map">Workout</Link>
-        </h2>
-        <Tab text={"지도"} path="/workout/map" />
-        <Tab text={"리스트"} path="/workout/list" />
-        <Tab text={"운동시설추가"} path="/workout/add-location" />
+        </TabTitle>
+        <Tab text={"지도"} path="/workout/map" icon={<BiMapAlt />} />
+        <Tab text={"리스트"} path="/workout/list" icon={<BiGridAlt />} />
+        <Tab text={"운동시설추가"} path="/workout/add-location" icon={<BiLocationPlus />} />
       </Tabs>
       <Tabs>
-        <h2>
+        <TabTitle>
           <Link href="/manage/calendar">Manage</Link>
-        </h2>
-        <Tab text={"캘린더"} path="/manage/calendar" />
-        <Tab text={"월별 내역"} path="/manage/list" />
-        <Tab text={"예산 설정"} path="/manage/budget" />
+        </TabTitle>
+        <Tab text={"캘린더"} path="/manage/calendar" icon={<BiCalendar />} />
+        <Tab text={"월별 내역"} path="/manage/list" icon={<BiListUl />} />
+        <Tab text={"예산 설정"} path="/manage/budget" icon={<BiCalculator />} />
       </Tabs>
       <Tabs>
-        <h2>
+        <TabTitle>
           <Link href="/setting">Setting</Link>
-        </h2>
-        <Tab text={"설정"} path="/setting" />
+        </TabTitle>
+        <Tab text={"설정"} path="/setting" icon={<BiCog />} />
       </Tabs>
       {/* <div className="menu-icon">
         <i></i>

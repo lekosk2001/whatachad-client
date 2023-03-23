@@ -12,5 +12,5 @@ export const Middle = styled.main`
 
 export const contents = styled.div`
   width: 100%;  
-  padding: 40px 20px;
+  padding: 40px 40px 100px 20px;
 `;

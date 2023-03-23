@@ -29,9 +29,9 @@ export const SearchTab = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;  
-  padding: 0px 15px;
-
-  input {
+  padding: 0px 15px;  
+  transition: 0.2s all ease;
+    input {
     background: transparent;
     border: none;
     color: white;
@@ -40,25 +40,36 @@ export const SearchTab = styled.div`
     height: 50px;
     outline: none;
   }
+
+  &:hover{
+    background: #222222;
+  }
 `;
 
 
 export const SearchIcon = styled.div`
-  width: 20px;
-  height: 20px;
   min-width: 20px;
-  border-radius: 5px;
-  background: #5C5C5C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg{
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const UserAuth = styled.ul`
   display: flex;
-  list-style: none;
-  gap: 20px;
-  
-  li {
+  list-style: none;  
+  li a{
     white-space:nowrap;
     font-size: 15px;
     font-weight: 500;
+    transition: 0.2s all ease;
+    padding: 10px;
+    height: 40px;
+    &:hover{
+      color: #666666;
+    }
   }
 `;

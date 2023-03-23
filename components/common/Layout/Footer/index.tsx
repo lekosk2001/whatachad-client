@@ -1,14 +1,14 @@
 import React from "react";
-import { FooterContainer } from "./styles";
+import { FooterContainer, GitLink } from "./styles";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <h1>What a Chad 🔱</h1>
-      <a href="https://github.com/whatachad">
+      <h2>What a Chad 🔱</h2>
+      <GitLink href="https://github.com/whatachad" target="_blank">
         <BsGithub /> All rights reserved.
-      </a>
+      </GitLink>
     </FooterContainer>
   );
 };
