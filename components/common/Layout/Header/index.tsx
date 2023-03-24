@@ -1,7 +1,13 @@
 import React from "react";
-import { HeaderContainer, Logo, SearchIcon, SearchTab, UserAuth } from "./styles";
-import Link from "next/link";
+import {
+  HeaderContainer,
+  Logo,
+  SearchIcon,
+  SearchTab,
+  UserAuth,
+} from "./styles";
 import { FiSearch } from "react-icons/fi";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -11,7 +17,7 @@ const Header = () => {
       </Logo>
       {/* <!-- Search bar --> */}
       <SearchTab>
-        <SearchIcon >
+        <SearchIcon>
           <FiSearch />
         </SearchIcon>
         <input type="text" placeholder="내 주변 운동시설 검색" />
@@ -20,10 +26,14 @@ const Header = () => {
       {/* <!-- Login and Sign up tabs --> */}
       <UserAuth>
         <li>
-          <Link href="#">Login</Link>
+          <Link href="/login">
+            <a>Login</a>
+          </Link>
         </li>
         <li>
-          <Link href="#">Sign Up</Link>
+          <Link href="/signup">
+            <a>Sign Up</a>
+          </Link>
         </li>
       </UserAuth>
     </HeaderContainer>
