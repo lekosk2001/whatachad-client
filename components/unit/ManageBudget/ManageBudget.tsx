@@ -4,8 +4,7 @@ import { PageContainer, PageContentsBox, PageDesc } from '@/components/common/Pa
 
 type Props = {}
 
-const ManageBudget_presenter = (props: Props) => {
-    // 이 아래 UI를 구현합니다.
+const ManageBudget = (props: Props) => {
     return (<PageContainer>
         <PageTitle title='Manage' location='청주시 흥덕구 복대동' />
         <PageDesc>예산 설정</PageDesc>
@@ -15,4 +14,4 @@ const ManageBudget_presenter = (props: Props) => {
     </PageContainer>)
 }
 
-export default ManageBudget_presenter
+export default ManageBudget

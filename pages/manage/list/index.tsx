@@ -1,11 +1,10 @@
-import ManageList_container from '@/components/unit/ManageList/ManageList_container'
-import React from 'react'
+import ManageList from '@/components/unit/ManageList/ManageList'
 
 type Props = {}
 
 const index = (props: Props) => {
     return (
-        <ManageList_container />
+        <ManageList />
     )
 }
 
