@@ -1,11 +1,9 @@
-import ManageList from '@/components/unit/ManageList/ManageList'
+import ManageList from "@/components/unit/ManageList/ManageList";
 
-type Props = {}
+type Props = {};
 
 const index = (props: Props) => {
-    return (
-        <ManageList />
-    )
-}
+  return <ManageList />;
+};
 
-export default index
+export default index;

@@ -5,12 +5,11 @@ export const LayoutStyle = styled.div`
   color: white;
 `;
 
-
 export const Middle = styled.main`
   display: flex;
 `;
 
 export const contents = styled.div`
-  width: 100%;  
+  width: 100%;
   padding: 40px 40px 100px 20px;
 `;

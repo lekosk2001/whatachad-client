@@ -1,12 +1,12 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import Navigation from './NavigationTab'
-import * as S from './styles'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
+import Navigation from "./NavigationTab";
+import * as S from "./styles";
 
 type Props = {
   children: JSX.Element;
-}
+};
 
 const Layout = (props: Props) => {
   return (
@@ -18,7 +18,7 @@ const Layout = (props: Props) => {
       </S.Middle>
       <Footer></Footer>
     </S.LayoutStyle>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

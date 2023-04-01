@@ -1,11 +1,9 @@
-import ManageBudget from "@/components/unit/ManageBudget/ManageBudget"
+import ManageBudget from "@/components/unit/ManageBudget/ManageBudget";
 
-type Props = {}
+type Props = {};
 
 const index = (props: Props) => {
-    return (
-        <ManageBudget />
-    )
-}
+  return <ManageBudget />;
+};
 
-export default index
+export default index;

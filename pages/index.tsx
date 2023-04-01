@@ -17,29 +17,38 @@ export default function Home() {
       <MainContainer>
         <PageTitle title="CHAD님 반갑습니다." location="청주시 OO구 OO동" />
         <MainSection>
-          <Link href={`/workout/map`}>
+          <Link href={`/workout`}>
             <SectionHeader>
-              <PageDesc>내 주변 운동시설</PageDesc><BiRightArrowAlt />
+              <PageDesc>내 주변 운동시설</PageDesc>
+              <BiRightArrowAlt />
             </SectionHeader>
           </Link>
-          <PageContentsBox style={{ "height": "300px" }}>운동시설 내용 (임시)</PageContentsBox>
+          <PageContentsBox style={{ height: "300px" }}>
+            운동시설 내용 (임시)
+          </PageContentsBox>
         </MainSection>
         <SectionBox>
           <MainSection>
             <Link href={`/manage/calendar`}>
               <SectionHeader>
-                <PageDesc>캘린더</PageDesc><BiRightArrowAlt />
+                <PageDesc>캘린더</PageDesc>
+                <BiRightArrowAlt />
               </SectionHeader>
             </Link>
-            <PageContentsBox style={{ "height": "580px" }}>캘린더 내용 (임시)</PageContentsBox>
+            <PageContentsBox style={{ height: "580px" }}>
+              캘린더 내용 (임시)
+            </PageContentsBox>
           </MainSection>
           <MainSection>
             <Link href={`/manage/list`}>
               <SectionHeader>
-                <PageDesc>월별 내역</PageDesc><BiRightArrowAlt />
+                <PageDesc>월별 내역</PageDesc>
+                <BiRightArrowAlt />
               </SectionHeader>
             </Link>
-            <PageContentsBox style={{ "height": "580px" }}>월별내역 내용 (임시)</PageContentsBox>
+            <PageContentsBox style={{ height: "580px" }}>
+              월별내역 내용 (임시)
+            </PageContentsBox>
           </MainSection>
         </SectionBox>
       </MainContainer>
@@ -70,15 +79,14 @@ const SectionHeader = styled.a`
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;  
+  gap: 10px;
   transition: 0.2s all ease;
-  svg{
+  svg {
     height: 30px;
-    width: 30px;    
+    width: 30px;
     color: #666666;
   }
-  &:hover{
+  &:hover {
     color: #666666;
   }
 `;
-

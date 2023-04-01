@@ -9,13 +9,11 @@ export const NavigationTabContainer = styled.aside`
   min-width: 240px;
 `;
 
-
 export const Tabs = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
 `;
-
 
 export const TabTitle = styled.h2`
   display: flex;
@@ -23,13 +21,13 @@ export const TabTitle = styled.h2`
   list-style: none;
   transition: 0.2s all ease;
   margin-bottom: 5px;
-  &:hover{
+  &:hover {
     color: #666666;
   }
 `;
 
 export const SingleTab = styled.li`
-  a{
+  a {
     cursor: pointer;
   }
 `;
@@ -39,11 +37,11 @@ export const SingleTabLink = styled.a`
   align-items: center;
   gap: 10px;
   padding: 5px;
-  border-radius: 5px;  
+  border-radius: 5px;
   transition: 0.2s all ease;
-  &:hover{
+  &:hover {
     background-color: #333333;
-    div{
+    div {
       background-color: #000;
     }
   }
@@ -57,7 +55,7 @@ export const RoundedMenuIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  svg{
+  svg {
     width: 18px;
     height: 18px;
   }

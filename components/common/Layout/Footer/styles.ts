@@ -18,4 +18,4 @@ export const GitLink = styled.a`
   align-items: center;
   gap: 5px;
   width: fit-content;
-`
+`;
