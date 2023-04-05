@@ -1,7 +1,7 @@
 import PageTitle from "@/components/common/Page/PageTitle";
 import React from "react";
-import { AddLocationContainer } from "./styles";
-import Map from "@/components/unit/WorkoutMap";
+import { AddLocationContainer } from "../../../components/unit/Workout/AddLocation/styles";
+import Map from "@/components/unit/Workout/WorkoutMap";
 
 type Props = {};
 

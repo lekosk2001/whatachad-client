@@ -1,8 +1,8 @@
 import PageTitle from "@/components/common/Page/PageTitle";
 import React from "react";
-import { MapIcon, SubHeader, WorkoutListContainer } from "./styles";
+import { MapIcon, SubHeader, WorkoutListContainer } from "../../components/unit/Workout/styles";
 import { GrMapLocation } from "react-icons/gr";
-import FacilityItem from "@/components/unit/WorkoutItem";
+import FacilityItem from "@/components/unit/Workout/WorkoutItem";
 import { Facility } from "@/types/workout";
 
 const dummyFacilities: Facility[] = [
