@@ -55,8 +55,8 @@ const makeStore = () => {
 };
 
 // Create next-redux-wrapper's wrapper
-const wrapper = createWrapper(makeStore, {
+export const wrapper = createWrapper(makeStore, {
   debug: process.env.NODE_ENV === "development",
 });
 
-export default wrapper;
+// export default wrapper;

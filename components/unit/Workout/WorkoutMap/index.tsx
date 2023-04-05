@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { useEffect } from "react";
+import { MapContainer } from "./styles";
 
 interface MapProps {
   latitude: number;
@@ -39,9 +39,5 @@ function Map({ latitude, longitude }: MapProps) {
 
   return <MapContainer id="map" />;
 }
-
-const MapContainer = styled.div`
-  aspect-ratio: 320 / 220;
-`;
 
 export default Map;
