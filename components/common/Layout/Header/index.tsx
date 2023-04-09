@@ -8,8 +8,14 @@ import {
 } from "./styles";
 import { FiSearch } from "react-icons/fi";
 import Link from "next/link";
+import { ReducerStates } from "@/redux/store";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const { signupDone, signupError, signupLoading, loginDone } = useSelector(
+    (state: ReducerStates) => state.user
+  );
+
   return (
     <HeaderContainer>
       <Logo>
@@ -24,18 +30,22 @@ const Header = () => {
       </SearchTab>
 
       {/* <!-- Login and Sign up tabs --> */}
-      <UserAuth>
-        <li>
-          <Link href="/login">
-            <a>Login</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/signup">
-            <a>Sign Up</a>
-          </Link>
-        </li>
-      </UserAuth>
+      {!loginDone ? (
+        <UserAuth>
+          <li>
+            <Link href="/login">
+              <a>Login</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/signup">
+              <a>Sign Up</a>
+            </Link>
+          </li>
+        </UserAuth>
+      ) : (
+        "Logout"
+      )}
     </HeaderContainer>
   );
 };
